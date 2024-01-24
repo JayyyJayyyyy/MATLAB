@@ -1,0 +1,9 @@
+x0=[1;1;1];
+fonkdegeri=@[x]5*x(1)^2-23*x(1)x(2)-9*x(2)^2+9^x(3)^2+15;
+a=[-1 -1 -1];
+b1=[4 -19 0;3 0 4];
+b=[10];
+b2=[50;100];
+dalt=-500;
+dust=500;
+[x,fonkdegeri,kontrol,bilgi,lamda,grad,hesse]=fmincom(fonkdegeri,x0,a,b,b1,b2,dalt,dust,'kisitfonk')
